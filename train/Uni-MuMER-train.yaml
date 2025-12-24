@@ -8,25 +8,36 @@ trust_remote_code: true
 ### method
 stage: sft
 do_train: true
-finetuning_type: full
-freeze_vision_tower: false # choices: [true, false]
-freeze_multi_modal_projector: false # choices: [true, false]
-freeze_language_model: false # choices: [true, false]
-deepspeed: examples/deepspeed/ds_z2_config.json
+finetuning_type: lora  # Use LoRA for quantization-aware training
+freeze_vision_tower: false
+freeze_multi_modal_projector: false
+freeze_language_model: false
+
+# QLoRA configuration for 4-bit quantization
+quantization_bit: 4
+quantization_type: nf4  # or fp4
+lora_target: all  # Apply LoRA to all linear layers
+lora_rank: 64
+lora_alpha: 16
+lora_dropout: 0.05
+
+# Use DeepSpeed for memory efficiency (optional, requires DeepSpeed)
+# deepspeed: examples/deepspeed/ds_z2_config.json
 
 ### dataset
+dataset_dir: train  # Thư mục chứa dataset_info.json
 # You need load the datasets first before using them, following LLamaFactory settings.
-dataset: crohme2023, crohme2023_can, crohme2023_error_find, crohme2023_error_fix, crohme2023_tree, crohme_train, crohme_train_can, crohme_train_error_find, crohme_train_error_fix, crohme_train_tree, hme100k_error_find, hme100k_error_fix, hme100k_train, hme100k_train_can, hme100k_train_tree, im2latex_v2_error_find, im2latex_v2_error_fix, im2latex_v2_train, im2latex_v2_train_can, im2latex_v2_train_tree, mathwriting_symbols, mathwriting_train, mathwriting_train_can, mathwriting_train_error_find, mathwriting_train_error_fix, mathwriting_train_tree
+dataset: parquet_crohme2023, parquet_crohme2023_can, parquet_crohme2023_error_find, parquet_crohme2023_error_fix, parquet_crohme2023_tree, parquet_crohme_train, parquet_crohme_train_can, parquet_crohme_train_error_find, parquet_crohme_train_error_fix, parquet_crohme_train_tree, parquet_hme100k_error_find, parquet_hme100k_error_fix, parquet_hme100k_train, parquet_hme100k_train_can, parquet_hme100k_train_tree, parquet_im2latex_v2_error_find, parquet_im2latex_v2_error_fix, parquet_im2latex_v2_train, parquet_im2latex_v2_train_can, parquet_im2latex_v2_train_tree, parquet_mathwriting_symbols, parquet_mathwriting_train, parquet_mathwriting_train_can, parquet_mathwriting_train_error_find, parquet_mathwriting_train_error_fix, parquet_mathwriting_train_tree
 
 template: qwen2_vl
 cutoff_len: 2048
 max_samples: 20000000
 overwrite_cache: true
-preprocessing_num_workers: 128
+preprocessing_num_workers: 16
 dataloader_num_workers: 128
 
 ### output
-output_dir: saves/qwen2.5_vl-3b/full/sft/standred/uni-mumer_full
+output_dir: saves/qwen2.5_vl-3b/qlora/sft/standred/uni-mumer_qlora
 logging_steps: 1
 save_steps: 1000
 plot_loss: true
@@ -34,10 +45,10 @@ overwrite_output_dir: true
 report_to: tensorboard
 
 ### train
-per_device_train_batch_size: 4
-gradient_accumulation_steps: 32  # for 4 A100 80G, this setting is for total batch size 512
+per_device_train_batch_size: 2  # Reduced from 4 due to quantization overhead
+gradient_accumulation_steps: 64  # Increased to maintain effective batch size
 
-learning_rate: 1.0e-5
+learning_rate: 1.0e-4  # Slightly higher for QLoRA
 num_train_epochs: 1.0
 lr_scheduler_type: cosine
 warmup_ratio: 0.1
@@ -53,3 +64,4 @@ resume_from_checkpoint: null
 # per_device_eval_batch_size: 8
 # eval_strategy: steps
 # eval_steps: 1000
+

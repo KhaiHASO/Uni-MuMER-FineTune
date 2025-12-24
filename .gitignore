@@ -22,7 +22,7 @@ dist/
 .env.*
 venv/
 .venv/
-
+Uni-MuMER-Qwen2.5-VL-3B/
 # Large datasets & archives
 data/
 data.zip

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # --------------------------------------------------------------
-# run_infer.sh – minimal wrapper for scripts/vllm_infer.py
+# run_infer.sh – minimal wrapper for scripts/infer.py
 # --------------------------------------------------------------
 # Required:
 #   -i / --input-dir    Path to input data
@@ -53,10 +53,11 @@ mkdir -p "$OUTPUT_DIR"
 echo "[INFO] Using GPU(s): $CUDA_VISIBLE_DEVICES" >&2
 
 # ---------- Build command ----------
-cmd=(python scripts/vllm_infer.py
+cmd=(python scripts/infer.py
   --input-dir  "$INPUT_DIR"
   --output-dir "$OUTPUT_DIR"
   --model      "$MODEL"
+  --batch-size 1
 )
 
 if [[ -n "${BATCH_SIZE}" ]]; then

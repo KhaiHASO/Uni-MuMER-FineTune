@@ -732,7 +732,8 @@
     "folder": "python"
   },
   "parquet_crohme2023": {
-    "file_name": "Uni-MuMER-Data/crohme2023",
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "crohme2023",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -746,7 +747,6 @@
     }
   },
   "parquet_mathwriting_train_error_find": {
-    "file_name": "Uni-MuMER-Data/mathwriting_train_error_find",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -757,10 +757,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "mathwriting_train_error_find"
   },
   "parquet_crohme2023_can": {
-    "file_name": "Uni-MuMER-Data/crohme2023_can",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -771,10 +772,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "crohme2023_can"
   },
   "parquet_mathwriting_train_can": {
-    "file_name": "Uni-MuMER-Data/mathwriting_train_can",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -785,10 +787,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "mathwriting_train_can"
   },
   "parquet_hme100k_train_tree": {
-    "file_name": "Uni-MuMER-Data/hme100k_train_tree",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -799,10 +802,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "hme100k_train_tree"
   },
   "parquet_mathwriting_train": {
-    "file_name": "Uni-MuMER-Data/mathwriting_train",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -813,10 +817,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "mathwriting_train"
   },
   "parquet_hme100k_train_can": {
-    "file_name": "Uni-MuMER-Data/hme100k_train_can",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -827,10 +832,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "hme100k_train_can"
   },
   "parquet_crohme_train_error_fix": {
-    "file_name": "Uni-MuMER-Data/crohme_train_error_fix",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -841,10 +847,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "crohme_train_error_fix"
   },
   "parquet_im2latex_v2_error_fix": {
-    "file_name": "Uni-MuMER-Data/im2latex_v2_error_fix",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -855,10 +862,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "im2latex_v2_error_fix"
   },
   "parquet_crohme_train": {
-    "file_name": "Uni-MuMER-Data/crohme_train",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -869,10 +877,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "crohme_train"
   },
   "parquet_im2latex_v2_train_tree": {
-    "file_name": "Uni-MuMER-Data/im2latex_v2_train_tree",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -883,10 +892,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "im2latex_v2_train_tree"
   },
   "parquet_mathwriting_train_tree": {
-    "file_name": "Uni-MuMER-Data/mathwriting_train_tree",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -897,10 +907,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "mathwriting_train_tree"
   },
   "parquet_mathwriting_symbols": {
-    "file_name": "Uni-MuMER-Data/mathwriting_symbols",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -911,10 +922,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "mathwriting_symbols"
   },
   "parquet_im2latex_v2_train_can": {
-    "file_name": "Uni-MuMER-Data/im2latex_v2_train_can",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -925,10 +937,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "im2latex_v2_train_can"
   },
   "parquet_im2latex_v2_error_find": {
-    "file_name": "Uni-MuMER-Data/im2latex_v2_error_find",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -939,10 +952,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "im2latex_v2_error_find"
   },
   "parquet_crohme_train_can": {
-    "file_name": "Uni-MuMER-Data/crohme_train_can",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -953,10 +967,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "crohme_train_can"
   },
   "parquet_hme100k_error_find": {
-    "file_name": "Uni-MuMER-Data/hme100k_error_find",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -967,10 +982,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "hme100k_error_find"
   },
   "parquet_hme100k_error_fix": {
-    "file_name": "Uni-MuMER-Data/hme100k_error_fix",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -981,10 +997,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "hme100k_error_fix"
   },
   "parquet_hme100k_train": {
-    "file_name": "Uni-MuMER-Data/hme100k_train",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -995,10 +1012,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "hme100k_train"
   },
   "parquet_crohme_train_error_find": {
-    "file_name": "Uni-MuMER-Data/crohme_train_error_find",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -1009,10 +1027,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "crohme_train_error_find"
   },
   "parquet_mathwriting_train_error_fix": {
-    "file_name": "Uni-MuMER-Data/mathwriting_train_error_fix",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -1023,10 +1042,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "mathwriting_train_error_fix"
   },
   "parquet_im2latex_v2_train": {
-    "file_name": "Uni-MuMER-Data/im2latex_v2_train",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -1037,10 +1057,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "im2latex_v2_train"
   },
   "parquet_crohme2023_error_fix": {
-    "file_name": "Uni-MuMER-Data/crohme2023_error_fix",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -1051,10 +1072,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "crohme2023_error_fix"
   },
   "parquet_crohme_train_tree": {
-    "file_name": "Uni-MuMER-Data/crohme_train_tree",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -1065,10 +1087,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "crohme_train_tree"
   },
   "parquet_crohme2023_error_find": {
-    "file_name": "Uni-MuMER-Data/crohme2023_error_find",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -1079,10 +1102,11 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "crohme2023_error_find"
   },
   "parquet_crohme2023_tree": {
-    "file_name": "Uni-MuMER-Data/crohme2023_tree",
     "formatting": "sharegpt",
     "columns": {
       "messages": "conversations",
@@ -1093,6 +1117,8 @@
       "content_tag": "value",
       "user_tag": "human",
       "assistant_tag": "gpt"
-    }
+    },
+    "hf_hub_url": "phxember/Uni-MuMER-Data",
+    "subset": "crohme2023_tree"
   }
 }
