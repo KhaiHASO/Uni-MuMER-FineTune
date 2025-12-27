@@ -251,7 +251,7 @@ pip install bitsandbytes>=0.41.0
    ```bash
    nvidia-smi
    # Kill processes không cần thiết
-   ```
+```
 
 ### Lỗi CUDA không khớp
 

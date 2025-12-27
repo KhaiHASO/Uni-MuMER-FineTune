@@ -7,3 +7,4 @@ editdistance==0.8.1
 nltk==3.9.1
 qwen-vl-utils[decord]==0.0.11
 bitsandbytes>=0.41.0  # For 4-bit quantization
+torchvision==0.21.0  # Compatible with torch 2.6.0
