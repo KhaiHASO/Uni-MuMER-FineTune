@@ -25,7 +25,6 @@ venv/
 Uni-MuMER-Qwen2.5-VL-3B/model-00001-of-00002.safetensors
 Uni-MuMER-Qwen2.5-VL-3B/model-00002-of-00002.safetensors
 # Large datasets & archives
-data/
 data.zip
 
 # Model weights / checkpoints
